@@ -1,0 +1,54 @@
+{
+  "saved": {
+    "facebookPage": {
+      "value": "100480055700493",
+      "label": "Crazy World",
+      "at": 1788376045461
+    },
+    "agencyProfile": {
+      "name": "Vectribe",
+      "website": "vectribeagency.com",
+      "location": "Birmingham, West Midlands, United Kingdom",
+      "services": [
+        "Website Development",
+        "Logo Design",
+        "Branding Design",
+        "Digital Marketing",
+        "SEO Services",
+        "Mobile App Development",
+        "AI Automation",
+        "CRM Automation",
+        "Speed Optimization",
+        "WordPress Development",
+        "PPC Management",
+        "Website Maintenance"
+      ],
+      "idealCustomers": "UK businesses seeking web development, SEO, and digital marketing services.",
+      "pitch": "We build websites UK businesses are proud of, offering comprehensive digital solutions from concept to execution.",
+      "at": 1788377159714
+    }
+  },
+  "enums": {
+    "facebook_pages_create_page_post.page::": {
+      "values": [
+        {
+          "value": "1529718723918874",
+          "label": "Striker Gaming"
+        },
+        {
+          "value": "100480055700493",
+          "label": "Crazy World"
+        },
+        {
+          "value": "113752963730253",
+          "label": "Sk 2.0"
+        },
+        {
+          "value": "1236731513004767",
+          "label": "Matnas Tutorials"
+        }
+      ],
+      "at": 1788375069822
+    }
+  }
+}
