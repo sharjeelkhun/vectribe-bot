@@ -1,0 +1,30 @@
+{
+  "name": "discord-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test-zai.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "z-ai",
+    "ai-assistant"
+  ],
+  "author": "Z.ai",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.27.0",
+    "dotenv": "^17.4.2",
+    "imapflow": "^1.7.8",
+    "node-cron": "^4.6.0",
+    "nodemailer": "^9.1.1",
+    "z-ai-web-dev-sdk": "^0.0.18"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
