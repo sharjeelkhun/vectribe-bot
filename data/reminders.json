@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "userId": "929511140478816297",
+    "username": "sharjeelkhun",
+    "channelId": "1544731988068405331",
+    "guildName": null,
+    "text": "test my bot\" and watch it ping you! 🚀",
+    "dueTs": 1788370635656,
+    "fired": true,
+    "createdAt": 1788370515656
+  },
+  {
+    "id": 2,
+    "userId": "929511140478816297",
+    "username": "sharjeelkhun",
+    "channelId": "1544731988068405331",
+    "guildName": null,
+    "text": "test the bot",
+    "dueTs": 1788373773340,
+    "fired": true,
+    "createdAt": 1788373653340
+  }
+]
