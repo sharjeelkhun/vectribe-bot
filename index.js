@@ -16,6 +16,7 @@ import cron from 'node-cron';
 
 import { chat, chatGrounded, webSearch, searchToDigest, translate, friendlyError } from './lib/zai.js';
 import { runAgent } from './lib/agent.js';
+import { activityBlock } from './lib/activity.js';
 import { tick as reminderTick, recoverMissed } from './lib/reminders.js';
 import { isGmailConfigured } from './lib/gmail.js';
 import { isMcpConfigured, zapierListTools } from './lib/mcp.js';
@@ -98,8 +99,8 @@ async function aiChatReply(message, userText) {
       return void (await message.reply({ embeds: [agentReply.embed] }));
     }
 
-    // 2) NORMAL CHAT — grounded AI answer
-    const { answer, searched, sources } = await chatGrounded(text, getHistory(key));
+    // 2) NORMAL CHAT — grounded AI answer (activity log = memory of past actions)
+    const { answer, searched, sources } = await chatGrounded(text, getHistory(key), activityBlock(10));
     pushHistory(key, text, answer);
 
     const chunks = chunkText(answer);
