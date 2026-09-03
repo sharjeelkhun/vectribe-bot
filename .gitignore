@@ -1,0 +1,7 @@
+node_modules/
+.env
+bot.log
+*.log
+*.pid
+.z-ai-config
+.cloudsim-test/
