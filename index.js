@@ -1,5 +1,20 @@
 // index.js — Z.ai Discord Assistant (entry point)
 import 'dotenv/config';
+
+// ---------------------------------------------------------------------------
+// WORKSHOP MODE STAND-DOWN: on Railway, exit as a harmless sleeper so this
+// copy never fights the workshop bot for the same Discord token.
+// REMOVE this block when the bot gets its own Z.ai API key (option A).
+// ---------------------------------------------------------------------------
+if (process.env.RAILWAY_ENVIRONMENT) {
+  console.log('🛑 WORKSHOP MODE — Railway copy standing down (brain endpoint is Z.ai-internal only).');
+  console.log('   Bot stays hosted & auto-deploying here; wake it by removing this block with a real ZAI_API_KEY.');
+  setInterval(() => {}, 1 << 30); // sleep forever, deployment stays "Success", never touches Discord
+} else {
+  console.log('🏠 Workshop mode — full bot boot.');
+}
+// ---------------------------------------------------------------------------
+
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
